@@ -1,4 +1,40 @@
 /* styles.css */
 body {
-  background-color: blue;
+    background-color: blue;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.b1 {
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.b2 {
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.b3 {
+    margin: 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
 }
