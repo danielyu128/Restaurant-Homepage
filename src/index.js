@@ -1,6 +1,7 @@
 // src/index.js
 import "./styles.css";
 import { greeting } from "./greeting.js";
+import loadHeader from "./header.js";
 
 console.log(greeting);
 
