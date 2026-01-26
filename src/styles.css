@@ -159,3 +159,91 @@ body {
 
 
 /* Inner Container 2 */
+.innerContainer2 {
+    background-color: #F2EFEA;
+    display: flex;
+    flex-direction: column;
+    padding: 150px 150px;
+    gap: 30px;
+    align-items: center;
+}
+
+
+.topSideMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.philosophyTitle {
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.motto {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.bottomSideMedia {
+    display: flex;
+    gap: 20px;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-color: white;
+    padding: 40px 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition-duration: 0.4s;
+    align-items: center;
+}
+
+.card1Motto,
+.card2Motto,
+.card3Motto {
+
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.card1Img,.card3Img {
+    width: auto;
+    height: 100px;
+
+}
+
+.card2Img {
+    box-sizing: border-box;
+
+    width: auto;
+    height: 100px;
+    padding: 10px;
+
+}
+
+.card1Paragraph,
+.card2Paragraph,
+.card3Paragraph {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-8px);
+
+
+}
