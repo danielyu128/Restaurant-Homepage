@@ -37,6 +37,8 @@ body {
     transition-duration: 0.4s;
     background-color: white;
     border: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Added shadow */
 
 }
 
@@ -67,6 +69,8 @@ body {
     font-weight: bold;
     transition-duration: 0.4s;
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    /* Added shadow */
 
 }
 
@@ -110,6 +114,8 @@ body {
     border-radius: 15px;
     align-self: center;
     transition-duration: 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    /* Added shadow */
 
 }
 
@@ -246,6 +252,9 @@ body {
     gap: 20px;
     transition-duration: 0.4s;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    /* Added shadow */
+
 }
 
 .card1Motto,
