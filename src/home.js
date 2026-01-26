@@ -94,7 +94,7 @@ export default function loadHome() {
     motto.classList.add("motto");
     motto.textContent = "The Crimson Fork is where flavor, atmosphere, and story come together.";
 
-    topSideMedia.append(philosophyTitle,motto);
+    topSideMedia.append(philosophyTitle, motto);
 
     const bottomSideMedia = document.createElement("div");
     bottomSideMedia.classList.add("bottomSideMedia");
@@ -121,7 +121,7 @@ export default function loadHome() {
     card1Paragraph.classList.add("card1Paragraph");
     card1Paragraph.textContent = "Sourced daily from local growers to ensure the highest nutrient content and best flavor.";
 
-    card1.append(card1Img,card1Motto,card1Paragraph);
+    card1.append(card1Img, card1Motto, card1Paragraph);
 
     //Card 2
 
@@ -142,7 +142,7 @@ export default function loadHome() {
     card2Paragraph.classList.add("card2Paragraph");
     card2Paragraph.textContent = "Eco-friendly practices in every step of our process, from sourcing to waste management.";
 
-    card2.append(card2Img,card2Motto,card2Paragraph);
+    card2.append(card2Img, card2Motto, card2Paragraph);
 
 
     //Card 3
@@ -164,14 +164,35 @@ export default function loadHome() {
     card3Paragraph.classList.add("card3Paragraph");
     card3Paragraph.textContent = "Recipes passed down through generations, preserving the authentic taste of our heritage.";
 
-    card3.append(card3Img,card3Motto,card3Paragraph);
+    card3.append(card3Img, card3Motto, card3Paragraph);
 
 
-    bottomSideMedia.append(card1,card2,card3);
+    bottomSideMedia.append(card1, card2, card3);
 
-    innerContainer2.append(topSideMedia,bottomSideMedia);
+    innerContainer2.append(topSideMedia, bottomSideMedia);
 
+    //Adding second inner container to main home page
     home.append(innerContainer2);
+
+
+
+    //Creating third inner container for main page
+
+    const innerContainer3 = document.createElement("div");
+    innerContainer3.classList.add("innerContainer3");
+
+    const footerName = document.createElement("div");
+    footerName.classList.add("footerName");
+    footerName.textContent = "The Crimson Fork";
+
+    const copyright = document.createElement("div");
+    copyright.classList.add("copyright");
+    copyright.textContent = "@ 2026 The Crimson Fork. All rights reserved.";
+
+    innerContainer3.append(footerName,copyright);
+
+    home.append(innerContainer3);
+
 
     return { home, viewMenuButton };
 }

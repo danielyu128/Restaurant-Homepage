@@ -15,3 +15,22 @@ document.body.prepend(header);
 const {home, viewMenuButton} = loadHome();
 
 content.append(home);
+
+homeButton.addEventListener("click",()=>{
+    clearContent();
+    content.append(home);
+
+});
+
+menuButton.addEventListener("click",()=>{
+    clearContent();
+
+});
+
+
+
+function clearContent(){
+
+    content.textContent = "";
+
+}

@@ -11,6 +11,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .title {
@@ -86,7 +88,11 @@ body {
 
 /* Inner Container 1 */
 .innerContainer1 {
-    background-color: #FAF9F6;
+    background: linear-gradient(135deg,
+            #F2F1ED 0%,
+            #E6ECFA 50%,
+            #DCE4F7 100%);
+
     display: flex;
     padding: 150px 150px;
     gap: 30px;
@@ -103,25 +109,59 @@ body {
     height: 350px;
     border-radius: 15px;
     align-self: center;
+    transition-duration: 0.2s;
+
+}
+
+.logo:hover {
+    transform: translateX(10px);
+
 }
 
 .establishDate {
     font-weight: bold;
+    transition-duration: 0.2s;
 }
+
+.establishDate:hover {
+    transform: translateY(-10px);
+}
+
 
 .restaurantName {
     font-weight: bold;
     font-size: 70px;
     font-style: italic;
+    transition-duration: 0.2s;
+
+}
+
+.restaurantName:hover {
+    transform: translateY(-10px);
+
 }
 
 .slogan {
     font-size: 20px;
     font-style: oblique;
+    transition-duration: 0.4s;
+
+}
+
+.slogan:hover {
+    transform: translateY(-10px);
+
 }
 
 .bio {
     font-size: 20px;
+    transition-duration: 0.4s;
+
+}
+
+.bio:hover {
+    transform: translateY(-10px);
+
 }
 
 .bookAndViewContainer {
@@ -140,6 +180,8 @@ body {
 .viewMenuButton:hover {
     background-color: #1a1a1a;
     color: white;
+    transform: translateX(5px);
+
 }
 
 
@@ -215,7 +257,8 @@ body {
 
 }
 
-.card1Img,.card3Img {
+.card1Img,
+.card3Img {
     width: auto;
     height: 100px;
 
@@ -243,7 +286,35 @@ body {
 .card1:hover,
 .card2:hover,
 .card3:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
 
 
+}
+
+
+
+
+/* Inner Container 3 */
+.innerContainer3 {
+    background: radial-gradient(circle at top center,
+            #1b263b 0%,
+            #0b132b 40%,
+            #000000 100%);
+
+    display: flex;
+    padding: 50px 50px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footerName {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.copyright {
+    color: grey;
 }
