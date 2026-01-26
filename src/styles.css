@@ -1,40 +1,70 @@
 /* styles.css */
 body {
     background-color: blue;
+    margin: 0;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30px;
+
 }
 
 .nav {
-
-    display: flex;
-    justify-content: center;
     padding: 15px;
 }
 
-.b1 {
-    margin: 10px;
-    padding: 10px 30px;
-    border-radius: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.b2 {
-    margin: 10px;
-    padding: 10px 30px;
-    border-radius: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-
-}
-
+.b1,
+.b2,
 .b3 {
     margin: 10px;
     padding: 10px 30px;
     border-radius: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    background-color: white;
+    border: 0px;
 
+}
+
+.b1:hover,
+.b2:hover,
+.b3:hover,
+.b4:hover {
+    transform: translateY(-5px);
+    color: burlywood;
+}
+
+.b1:active,
+.b2:active,
+.b3:active {
+    background-color: burlywood;
+    color: white;
+}
+
+.b4 {
+
+    background-color: black;
+    border: 0px;
+    margin: 20px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    color: white;
+
+}
+
+.b4:hover{
+    background-color: #1a1a1a;
 }
