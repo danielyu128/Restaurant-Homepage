@@ -119,10 +119,7 @@ body {
 
 }
 
-.logo:hover {
-    transform: translateX(10px);
 
-}
 
 .establishDate {
     font-weight: bold;
