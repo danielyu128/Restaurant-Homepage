@@ -5,8 +5,8 @@ export default function loadHome() {
     const home = document.createElement("div");
     home.classList.add("home");
 
-    const innerContainer = document.createElement("div");
-    innerContainer.classList.add("innerContainer");
+    const innerContainer1 = document.createElement("div");
+    innerContainer1.classList.add("innerContainer1");
 
     const leftSideMedia = document.createElement("div");
     leftSideMedia.classList.add("leftSideMedia");
@@ -64,15 +64,63 @@ export default function loadHome() {
 
     leftSideMedia.append(establishDate, restaurantName, slogan, bio, bookAndViewContainer, footerContainer);
 
-    innerContainer.append(leftSideMedia, rightSideMedia);
-    home.append(innerContainer);
-
-    
+    innerContainer1.append(leftSideMedia, rightSideMedia);
+    home.append(innerContainer1);
 
 
+    const innerContainer2 = document.createElement("div");
+    innerContainer2.classList.add("innerContainer2");
 
 
+    const topSideMedia = document.createElement("div");
+    topSideMedia.classList.add("topSideMedia");
 
+    const philosophyTitle = document.createElement("div");
+    philosophyTitle.classList.add("philosophyTitle");
+
+    const motto = document.createElement("div");
+    motto.classList.add("motto");
+
+    const bottomSideMedia = document.createElement("div");
+    bottomSideMedia.classList.add("bottomSideMedia");
+
+    const card1 = document.createElement("div");
+    card1.classList.add("card1");
+
+    const card1Img = document.createElement("img");
+    card1Img.classList.add("card1Img");
+
+    const card1Motto = document.createElement("div");
+    card1Motto.classList.add("card1Motto");
+
+    const card1Paragraph = document.createElement("div");
+    card1Paragraph.classList.add("card1Paragraph");
+
+
+    const card2 = document.createElement("div");
+    card2.classList.add("card2");
+
+    const card2Img = document.createElement("img");
+    card2Img.classList.add("card2Img");
+
+    const card2Motto = document.createElement("div");
+    card2Motto.classList.add("card2Motto");
+
+    const card2Paragraph = document.createElement("div");
+    card2Paragraph.classList.add("card2Paragraph");
+
+
+    const card3 = document.createElement("div");
+    card3.classList.add("card3");
+
+    const card3Img = document.createElement("img");
+    card3Img.classList.add("card3Img");
+
+    const card3Motto = document.createElement("div");
+    card3Motto.classList.add("card3Motto");
+
+    const card3Paragraph = document.createElement("div");
+    card3Paragraph.classList.add("card3Paragraph");
 
 
     return { home, viewMenuButton };

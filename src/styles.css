@@ -83,12 +83,10 @@ body {
 
 
 /* Styling for home page */
-.home {
+
+/* Inner Container 1 */
+.innerContainer1 {
     background-color: #FAF9F6;
-
-}
-
-.innerContainer {
     display: flex;
     padding: 150px 150px;
     gap: 30px;
@@ -158,3 +156,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+
+/* Inner Container 2 */
