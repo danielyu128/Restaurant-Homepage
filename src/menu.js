@@ -410,7 +410,7 @@ export default function loadMenu() {
     mainCoursesItem4Dietary2.classList.add("gF")
 
     mainCoursesItem4Dietary.classList.add("dietary");
-    mainCoursesItem4Dietary.append(mainCoursesItem4Dietary1,mainCoursesItem4Dietary2);
+    mainCoursesItem4Dietary.append(mainCoursesItem4Dietary1, mainCoursesItem4Dietary2);
 
 
 
@@ -545,6 +545,115 @@ export default function loadMenu() {
     //Add to page
     menuPage.append(menuDishes);
 
+
+    //Contact info at bottom of the page
+    const contacts = document.createElement("div");
+    contacts.classList.add("contacts");
+
+
+    const contactsTop = document.createElement("div");
+    contactsTop.classList.add("contactsTop");
+
+    //Left contact div elements
+    const contactsTopLeft = document.createElement("div");
+    contactsTopLeft.classList.add("contactFrame");
+
+
+    const contactsTopLeftTitle = document.createElement("div");
+    contactsTopLeftTitle.classList.add("contactsTopLeftTitle");
+    contactsTopLeftTitle.textContent = "The Crimson Fork";
+
+    const contactsTopLeftInfo = document.createElement("div");
+    contactsTopLeftInfo.classList.add("contactsTopLeftInfo");
+    contactsTopLeftInfo.textContent = "Bringing the finest culinary experiences to Toronto since 2022.";
+
+    contactsTopLeft.append(contactsTopLeftTitle,contactsTopLeftInfo);
+
+
+    //Middle contact div elements
+    const contactsTopMiddle = document.createElement("div");
+    contactsTopMiddle.classList.add("contactFrame");
+
+    const contactsTopMiddleTitle = document.createElement("div");
+    contactsTopMiddleTitle.classList.add("contactHours");
+    contactsTopMiddleTitle.textContent = "CONTACT";
+
+    const contactsTopMiddleInfo = document.createElement("div");
+    contactsTopMiddleInfo.classList.add("contactHoursFormat");
+
+    //Address
+    const contactsTopMiddleInfoAddress = document.createElement("div");
+    contactsTopMiddleInfoAddress.classList.add("contactHoursFont");
+    contactsTopMiddleInfoAddress.textContent = "0000 Crimson Way, Toronto, ON  M0M 0M0  Canada";
+
+    //Phone Number
+    const contactsTopMiddleInfoNumber = document.createElement("div");
+    contactsTopMiddleInfoNumber.classList.add("contactHoursFont");
+    contactsTopMiddleInfoNumber.textContent = "+1 (416) 000-0000";
+
+    //Email
+    const contactsTopMiddleInfoEmail = document.createElement("div");
+    contactsTopMiddleInfoEmail.classList.add("contactHoursFont");
+    contactsTopMiddleInfoEmail.textContent = "contact@thecrimsonfork.example";
+
+    contactsTopMiddleInfo.append(contactsTopMiddleInfoAddress,contactsTopMiddleInfoNumber,contactsTopMiddleInfoEmail);
+
+    contactsTopMiddle.append(contactsTopMiddleTitle,contactsTopMiddleInfo);
+
+
+
+    const contactsTopRight = document.createElement("div");
+    contactsTopRight.classList.add("contactFrame");
+
+    const contactsTopRightTitle = document.createElement("div");
+    contactsTopRightTitle.classList.add("contactHours");
+    contactsTopRightTitle.textContent = "HOURS";
+
+    const contactsTopRightHoursOfOperation = document.createElement("div");
+    contactsTopRightHoursOfOperation.classList.add("contactHoursFormat");
+
+    const weekdays = document.createElement("div");
+    weekdays.classList.add("contactHoursFont");
+    weekdays.textContent = "Mon-Fri: 11am - 10pm";
+
+    const weekends = document.createElement("div");
+    weekends.classList.add("contactHoursFont");
+    weekends.textContent = "Sat-Sun: 10am - 11pm";
+
+
+    contactsTopRightHoursOfOperation.append(weekdays,weekends);
+
+    contactsTopRight.append(contactsTopRightTitle,contactsTopRightHoursOfOperation);
+
+    //Appending the top left, middle, and right div elements to the top side of the header
+    contactsTop.append(contactsTopLeft,contactsTopMiddle,contactsTopRight);
+
+
+    //Bottom part of the contacts
+    const contactsBottom = document.createElement("div");
+    contactsBottom.classList.add("contactsBottom");
+    contactsBottom.textContent = "© 2026 The Crimson Fork. All rights reserved.";
+
+    contacts.append(contactsTop,contactsBottom);
+
+
+    //Adding contacts to page
+    menuPage.append(contacts);
+
+    const innerContainer3 = document.createElement("div");
+    innerContainer3.classList.add("innerContainer3");
+
+    const footerName = document.createElement("div");
+    footerName.classList.add("footerName");
+    footerName.textContent = "The Crimson Fork";
+
+    const copyright = document.createElement("div");
+    copyright.classList.add("copyright");
+    copyright.textContent = "@ 2026 The Crimson Fork. All rights reserved.";
+
+    innerContainer3.append(footerName,copyright);
+
+    menuPage.append(innerContainer3);
 
 
     return { menuPage };

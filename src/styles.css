@@ -514,7 +514,7 @@ body {
         transform 0.4s ease,
         background-color 0.4s ease;
     border-radius: 15px;
-    
+
 }
 
 .refreshments {
@@ -535,12 +535,75 @@ body {
 
 }
 
-.drinkNamePrice{
+.drinkNamePrice {
     display: flex;
     gap: 30px;
 }
 
-.drinkName{
+.drinkName {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
+}
+
+.contacts {
+    background-color: #f8f5f0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 90px;
+    gap: 40px;
+}
+
+.contactsTop {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactsBottom {
+    text-align: center;
+    border-top: 0.6px solid lightgray;
+    padding: 30px;
+
+}
+
+.contactFrame {
+    display: flex;
+    padding: 15px;
+    border-radius: 15px;
+    flex-direction: column;
+    gap: 20px;
+    transition:
+        transform 0.4s ease,
+        background-color 0.4s ease;
+
+}
+
+.contactFrame:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.05);
+
+}
+
+.contactsTopLeftTitle {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.contactHours {
+    font-weight: bold;
+    color: #555555;
+    font-family: "Inter", sans-serif;
+}
+
+.contactHoursFont,
+.contactsTopLeftInfo,
+.contactsBottom {
+    color: #555555;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+.contactHoursFormat {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
