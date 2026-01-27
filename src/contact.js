@@ -1,3 +1,7 @@
+import location from "./assets/location.png";
+import phone from "./assets/phone.png";
+import email from "./assets/email.png";
+
 export default function loadContact() {
 
     const contactPage = document.createElement("div");
@@ -45,20 +49,21 @@ export default function loadContact() {
 
     //Adress div
     const addressContainer = document.createElement("div");
-    addressContainer.classList.add("addressContainer");
+    addressContainer.classList.add("infoContainer");
 
     const addressContainerImg = document.createElement("img");
-    addressContainerImg.classList.add("addressContainerImg");
+    addressContainerImg.classList.add("imgContainer");
+    addressContainerImg.src = location;
 
     const addressContainerRight = document.createElement("div");
-    addressContainerRight.classList.add("addressContainerRight");
+    addressContainerRight.classList.add("rightContainer");
 
     const addressContainerRightTitle = document.createElement("div");
-    addressContainerRightTitle.classList.add("addressContainerRightTitle");
+    addressContainerRightTitle.classList.add("rightTitle");
     addressContainerRightTitle.textContent = "Visit Us";
 
     const addressContainerRightInfo = document.createElement("div");
-    addressContainerRightInfo.classList.add("addressContainerRightInfo");
+    addressContainerRightInfo.classList.add("rightInfo");
     addressContainerRightInfo.textContent = "0000 Crimson Way, Toronto, ON M0M 0M0 Canada";
 
     addressContainerRight.append(addressContainerRightTitle, addressContainerRightInfo);
@@ -68,20 +73,21 @@ export default function loadContact() {
 
     //Phone number div
     const phoneContainer = document.createElement("div");
-    phoneContainer.classList.add("phoneContainer");
+    phoneContainer.classList.add("infoContainer");
 
     const phoneContainerImg = document.createElement("img");
-    phoneContainerImg.classList.add("phoneContainerImg");
+    phoneContainerImg.classList.add("imgContainer");
+    phoneContainerImg.src = phone;
 
     const phoneContainerRight = document.createElement("div");
-    phoneContainerRight.classList.add("phoneContainerRight");
+    phoneContainerRight.classList.add("rightContainer");
 
     const phoneContainerRightTitle = document.createElement("div");
-    phoneContainerRightTitle.classList.add("phoneContainerRightTitle");
+    phoneContainerRightTitle.classList.add("rightTitle");
     phoneContainerRightTitle.textContent = "Call Us"
 
     const phoneContainerRightInfo = document.createElement("div");
-    phoneContainerRightInfo.classList.add("phoneContainerRightInfo");
+    phoneContainerRightInfo.classList.add("rightInfo");
     phoneContainerRightInfo.textContent = "+1 (416) 000-0000";
 
     phoneContainerRight.append(phoneContainerRightTitle, phoneContainerRightInfo);
@@ -93,20 +99,21 @@ export default function loadContact() {
 
     //Email Div
     const emailContainer = document.createElement("div");
-    emailContainer.classList.add("emailContainer");
+    emailContainer.classList.add("infoContainer");
 
     const emailContainerImg = document.createElement("img");
-    emailContainerImg.classList.add("emailContainerImg");
+    emailContainerImg.classList.add("imgContainer");
+    emailContainerImg.src = email;
 
     const emailContainerRight = document.createElement("div");
-    emailContainerRight.classList.add("emailContainerRight");
+    emailContainerRight.classList.add("rightContainer");
 
     const emailContainerRightTitle = document.createElement("div");
-    emailContainerRightTitle.classList.add("emailContainerRightTitle");
+    emailContainerRightTitle.classList.add("rightTitle");
     emailContainerRightTitle.textContent = "Email Us"
 
     const emailContainerRightInfo = document.createElement("div");
-    emailContainerRightInfo.classList.add("emailContainerRightInfo");
+    emailContainerRightInfo.classList.add("rightInfo");
     emailContainerRightInfo.textContent = "contact@thecrimsonfork.example";
 
     emailContainerRight.append(emailContainerRightTitle, emailContainerRightInfo);

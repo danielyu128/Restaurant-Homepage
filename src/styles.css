@@ -655,3 +655,68 @@ body {
 .contactStatement {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.contactContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 150px;
+    gap: 50px;
+}
+
+.contactContentLeftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.getInTouch {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.inquiry {
+    color: #555555;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.contactAdressPhoneNumberEmail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.infoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background-color: #FDF8F1;
+    border-radius: 15px;
+}
+
+.imgContainer {
+    width: 50px;
+    height: auto;
+
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rightTitle {
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+}
+
+.rightInfo {
+    color: #555555;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+}
