@@ -28,7 +28,7 @@ export default function loadMenu() {
     menuDishes.classList.add("menuDishes");
 
 
-    
+
     //Small plates section
     const smallPlates = document.createElement("div");
     smallPlates.classList.add("smallPlates");
@@ -51,18 +51,24 @@ export default function loadMenu() {
 
     const smallPlatesItem1Name = document.createElement("div");
     smallPlatesItem1Name.classList.add("smallPlatesItem1Name");
+    smallPlatesItem1Name.textContent = "Ember-Roasted Beet Tartare";
+
 
     const smallPlatesItem1Price = document.createElement("div");
     smallPlatesItem1Price.classList.add("smallPlatesItem1Price");
+    smallPlatesItem1Price.textContent = "$14";
+
 
     //Div that contains the bio
     const smallPlatesItem1Info = document.createElement("div");
     smallPlatesItem1Info.classList.add("smallPlatesItem1Info");
+    smallPlatesItem1Info.textContent = "Finely chopped roasted beets, capers, Dijon, shallots, and cold-pressed olive oil, served with grilled sourdough crostini.";
+
 
     //Div that contains the dietary restrictions
     const smallPlatesItem1Dietary = document.createElement("div");
     smallPlatesItem1Dietary.classList.add("smallPlatesItem1Dietary");
-
+    smallPlatesItem1Dietary.textContent = "Vegetarian, Gluten Free";
 
     //Item 2
     const smallPlatesItem2 = document.createElement("div");
@@ -74,18 +80,22 @@ export default function loadMenu() {
 
     const smallPlatesItem2Name = document.createElement("div");
     smallPlatesItem2Name.classList.add("smallPlatesItem2Name");
+    smallPlatesItem2Name.textContent = "Crimson Calamari";
+
 
     const smallPlatesItem2Price = document.createElement("div");
     smallPlatesItem2Price.classList.add("smallPlatesItem2Price");
+    smallPlatesItem2Price.textContent = "$17";
 
     //Div that contains the bio
     const smallPlatesItem2Info = document.createElement("div");
     smallPlatesItem2Info.classList.add("smallPlatesItem2Info");
+    smallPlatesItem2Info.textContent = "Lightly dusted calamari rings, flash-fried and tossed in smoked chili oil, served with lemon aioli.";
 
     //Div that contains the dietary restrictions
     const smallPlatesItem2Dietary = document.createElement("div");
     smallPlatesItem2Dietary.classList.add("smallPlatesItem2Dietary");
-
+    smallPlatesItem2Dietary.textContent = "Spicy";
 
 
     //Item 3
@@ -98,17 +108,24 @@ export default function loadMenu() {
 
     const smallPlatesItem3Name = document.createElement("div");
     smallPlatesItem3Name.classList.add("smallPlatesItem3Name");
+    smallPlatesItem3Name.textContent = "Heritage Burrata & Fire Tomatoes";
+
 
     const smallPlatesItem3Price = document.createElement("div");
     smallPlatesItem3Price.classList.add("smallPlatesItem3Price");
+    smallPlatesItem3Price.textContent = "$18";
+
 
     //Div that contains the bio
     const smallPlatesItem3Info = document.createElement("div");
     smallPlatesItem3Info.classList.add("smallPlatesItem3Info");
+    smallPlatesItem3Info.textContent = "Creamy burrata paired with blistered heirloom tomatoes, basil oil, and aged balsamic.";
+
 
     //Div that contains the dietary restrictions
     const smallPlatesItem3Dietary = document.createElement("div");
     smallPlatesItem3Dietary.classList.add("smallPlatesItem3Dietary");
+    smallPlatesItem3Dietary.textContent = "$18";
 
 
     //Item 4
@@ -121,17 +138,25 @@ export default function loadMenu() {
 
     const smallPlatesItem4Name = document.createElement("div");
     smallPlatesItem4Name.classList.add("smallPlatesItem4Name");
+    smallPlatesItem4Name.textContent = "Braised Short Rib Arancini";
+
 
     const smallPlatesItem4Price = document.createElement("div");
     smallPlatesItem4Price.classList.add("smallPlatesItem4Price");
+    smallPlatesItem4Price.textContent = "$19";
+
 
     //Div that contains the bio
     const smallPlatesItem4Info = document.createElement("div");
     smallPlatesItem4Info.classList.add("smallPlatesItem4Info");
+    smallPlatesItem4Info.textContent = "Crispy risotto balls filled with slow-braised beef short rib and fontina, served with rosemary tomato sauce.";
+
 
     //Div that contains the dietary restrictions
     const smallPlatesItem4Dietary = document.createElement("div");
     smallPlatesItem4Dietary.classList.add("smallPlatesItem4Dietary");
+    smallPlatesItem4Dietary.textContent = "";
+
 
 
 
@@ -159,17 +184,25 @@ export default function loadMenu() {
 
     const mainCoursesItem1Name = document.createElement("div");
     mainCoursesItem1Name.classList.add("mainCoursesItem1Name");
+    mainCoursesItem1Name.textContent = "Maple-Glazed Duck Breast";
+
 
     const mainCoursesItem1Price = document.createElement("div");
     mainCoursesItem1Price.classList.add("mainCoursesItem1Price");
+    mainCoursesItem1Price.textContent = "$38";
+
 
     //Div that contains the bio
     const mainCoursesItem1Info = document.createElement("div");
     mainCoursesItem1Info.classList.add("mainCoursesItem1Info");
+    mainCoursesItem1Info.textContent = "Pan-seared duck breast with maple gastrique, roasted root vegetables, and juniper jus.";
+
 
     //Div that contains the dietary restrictions
     const mainCoursesItem1Dietary = document.createElement("div");
     mainCoursesItem1Dietary.classList.add("mainCoursesItem1Dietary");
+    mainCoursesItem1Dietary.textContent = "Gluten Free";
+
 
 
     //Item 2
@@ -182,18 +215,24 @@ export default function loadMenu() {
 
     const mainCoursesItem2Name = document.createElement("div");
     mainCoursesItem2Name.classList.add("mainCoursesItem2Name");
+    mainCoursesItem2Name.textContent = "Fire-Kissed Atlantic Salmon";
+
 
     const mainCoursesItem2Price = document.createElement("div");
     mainCoursesItem2Price.classList.add("mainCoursesItem2Price");
+    mainCoursesItem2Price.textContent = "$34";
+
 
     //Div that contains the bio
     const mainCoursesItem2Info = document.createElement("div");
     mainCoursesItem2Info.classList.add("mainCoursesItem2Info");
+    mainCoursesItem2Info.textContent = "Grilled salmon with charred lemon, fennel slaw, and herb-infused quinoa.";
+
 
     //Div that contains the dietary restrictions
     const mainCoursesItem2Dietary = document.createElement("div");
     mainCoursesItem2Dietary.classList.add("mainCoursesItem2Dietary");
-
+    mainCoursesItem2Dietary.textContent = "Gluten Free";
 
 
     //Item 3
@@ -206,17 +245,26 @@ export default function loadMenu() {
 
     const mainCoursesItem3Name = document.createElement("div");
     mainCoursesItem3Name.classList.add("mainCoursesItem3Name");
+    mainCoursesItem3Name.textContent = "Wild Mushroom Pappardelle";
+
 
     const mainCoursesItem3Price = document.createElement("div");
     mainCoursesItem3Price.classList.add("mainCoursesItem3Price");
+    mainCoursesItem3Price.textContent = "$29";
+
 
     //Div that contains the bio
     const mainCoursesItem3Info = document.createElement("div");
     mainCoursesItem3Info.classList.add("mainCoursesItem3Info");
+    mainCoursesItem3Info.textContent = "Hand-cut pasta tossed with foraged mushrooms, garlic cream, thyme, and aged pecorino.";
+
 
     //Div that contains the dietary restrictions
     const mainCoursesItem3Dietary = document.createElement("div");
     mainCoursesItem3Dietary.classList.add("mainCoursesItem3Dietary");
+    mainCoursesItem3Dietary.textContent = "Vegetarian";
+
+
 
 
     //Item 4
@@ -229,17 +277,23 @@ export default function loadMenu() {
 
     const mainCoursesItem4Name = document.createElement("div");
     mainCoursesItem4Name.classList.add("mainCoursesItem4Name");
+    mainCoursesItem4Name.textContent = "Crimson Spice Lamb Shank";
+
 
     const mainCoursesItem4Price = document.createElement("div");
     mainCoursesItem4Price.classList.add("mainCoursesItem4Price");
+    mainCoursesItem4Price.textContent = "$42";
 
     //Div that contains the bio
     const mainCoursesItem4Info = document.createElement("div");
     mainCoursesItem4Info.classList.add("mainCoursesItem4Info");
+    mainCoursesItem4Info.textContent = "Slow-braised lamb shank in a rich tomato-chili reduction, served over creamy polenta.";
+
 
     //Div that contains the dietary restrictions
     const mainCoursesItem4Dietary = document.createElement("div");
     mainCoursesItem4Dietary.classList.add("mainCoursesItem4Dietary");
+    mainCoursesItem4Dietary.textContent = "Spicy, Gluten Free";
 
 
 
@@ -247,13 +301,91 @@ export default function loadMenu() {
 
 
 
-
-
+    //Refreshments
     const refreshments = document.createElement("div");
     refreshments.classList.add("refreshments");
 
+    const refreshmentsTitle = document.createElement("div");
+    refreshmentsTitle.classList.add("refreshmentsTitle");
+
+    //Div that holds the restaurants
+    const refreshmentsList = document.createElement("div");
+    refreshmentsList.classList.add("refreshmentsList");
+
+    //Refreshment 1
+    const refreshmentsItem1 = document.createElement("div");
+    refreshmentsItem1.classList.add("refreshmentsItem1");
+
+    const refreshmentsItem1Img = document.createElement("img");
+    refreshmentsItem1Img.classList.add("refreshmentsItem1Img");
+
+    const refreshmentsItem1NamePrice = document.createElement("div");
+    refreshmentsItem1NamePrice.classList.add("refreshmentsItem1NamePrice");
+
+    const refreshmentsItem1Name = document.createElement("div");
+    refreshmentsItem1Name.classList.add("refreshmentsItem1Name");
+    refreshmentsItem1Name.textContent = "Scarlet Spritz";
 
 
+    const refreshmentsItem1Price = document.createElement("div");
+    refreshmentsItem1Price.classList.add("refreshmentsItem1Price");
+    refreshmentsItem1Price.textContent = "$13";
+
+
+    const refreshmentsItem1Info = document.createElement("div");
+    refreshmentsItem1Info.classList.add("refreshmentsItem1Info");
+    refreshmentsItem1Info.textContent = "A refreshing blend of blood orange, prosecco, and a splash of soda.";
+
+
+    //Refreshment 2
+    const refreshmentsItem2 = document.createElement("div");
+    refreshmentsItem2.classList.add("refreshmentsItem2");
+
+    const refreshmentsItem2Img = document.createElement("img");
+    refreshmentsItem2Img.classList.add("refreshmentsItem2Img");
+
+    const refreshmentsItem2NamePrice = document.createElement("div");
+    refreshmentsItem2NamePrice.classList.add("refreshmentsItem2NamePrice");
+
+    const refreshmentsItem2Name = document.createElement("div");
+    refreshmentsItem2Name.classList.add("refreshmentsItem2Name");
+    refreshmentsItem2Name.textContent = "Garden Tonic";
+
+
+    const refreshmentsItem2Price = document.createElement("div");
+    refreshmentsItem2Price.classList.add("refreshmentsItem2Price");
+    refreshmentsItem2Price.textContent = "$9";
+
+
+    const refreshmentsItem2Info = document.createElement("div");
+    refreshmentsItem2Info.classList.add("refreshmentsItem2Info");
+    refreshmentsItem2Info.textContent = "Cucumber, fresh mint, lime, and house-made tonic water.";
+
+
+    //Refreshment 3
+    const refreshmentsItem3 = document.createElement("div");
+    refreshmentsItem3.classList.add("refreshmentsItem3");
+
+    const refreshmentsItem3Img = document.createElement("img");
+    refreshmentsItem3Img.classList.add("refreshmentsItem3Img");
+
+    const refreshmentsItem3NamePrice = document.createElement("div");
+    refreshmentsItem3NamePrice.classList.add("refreshmentsItem3NamePrice");
+
+    const refreshmentsItem3Name = document.createElement("div");
+    refreshmentsItem3Name.classList.add("refreshmentsItem3Name");
+    refreshmentsItem3Name.textContent = "Crimson Berry Iced Tea";
+
+
+    const refreshmentsItem3Price = document.createElement("div");
+    refreshmentsItem3Price.classList.add("refreshmentsItem3Price");
+    refreshmentsItem3Price.textContent = "$8";
+
+
+    const refreshmentsItem3Info = document.createElement("div");
+    refreshmentsItem3Info.classList.add("refreshmentsItem3Info");
+    refreshmentsItem3Info.textContent = "Cold-brewed black tea infused with raspberry and hibiscus.";
+    
 
     return { menuPage };
 }
