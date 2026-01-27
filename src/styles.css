@@ -607,3 +607,51 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+
+
+
+
+/* Styling for contact page */
+.contactHeader {
+    height: 300px;
+
+    background-image: url("./assets/vibe.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+    padding-left: 60px;
+}
+
+
+.contactHeader {
+    position: relative;
+}
+
+.contactHeader::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contactHeader>* {
+    position: relative;
+    z-index: 1;
+}
+
+.contactUs {
+    font-weight: bold;
+    font-size: 50px;
+
+}
+
+.contactStatement {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
