@@ -1,3 +1,7 @@
+import drink1 from "./assets/ScarletSpritz.jpg";
+import drink2 from "./assets/GardenTonic.jpg";
+import drink3 from "./assets/CrimsonBerryIcedTea.jpg";
+
 export default function loadMenu() {
 
 
@@ -428,6 +432,7 @@ export default function loadMenu() {
 
     const refreshmentsTitle = document.createElement("div");
     refreshmentsTitle.classList.add("refreshmentsTitle");
+    refreshmentsTitle.textContent = "Refreshments"
 
     //Div that holds the restaurants
     const refreshmentsList = document.createElement("div");
@@ -435,28 +440,29 @@ export default function loadMenu() {
 
     //Refreshment 1
     const refreshmentsItem1 = document.createElement("div");
-    refreshmentsItem1.classList.add("refreshmentsItem1");
+    refreshmentsItem1.classList.add("drinkItems");
 
     const refreshmentsItem1Img = document.createElement("img");
-    refreshmentsItem1Img.classList.add("refreshmentsItem1Img");
+    refreshmentsItem1Img.classList.add("drinks");
+    refreshmentsItem1Img.src = drink1;
 
     const refreshmentsItem1NamePrice = document.createElement("div");
-    refreshmentsItem1NamePrice.classList.add("refreshmentsItem1NamePrice");
+    refreshmentsItem1NamePrice.classList.add("drinkNamePrice");
 
     const refreshmentsItem1Name = document.createElement("div");
-    refreshmentsItem1Name.classList.add("refreshmentsItem1Name");
+    refreshmentsItem1Name.classList.add("drinkName");
     refreshmentsItem1Name.textContent = "Scarlet Spritz";
 
 
     const refreshmentsItem1Price = document.createElement("div");
-    refreshmentsItem1Price.classList.add("refreshmentsItem1Price");
+    refreshmentsItem1Price.classList.add("itemPrice");
     refreshmentsItem1Price.textContent = "$13";
 
     refreshmentsItem1NamePrice.append(refreshmentsItem1Name, refreshmentsItem1Price);
 
 
     const refreshmentsItem1Info = document.createElement("div");
-    refreshmentsItem1Info.classList.add("refreshmentsItem1Info");
+    refreshmentsItem1Info.classList.add("drinkInfo");
     refreshmentsItem1Info.textContent = "A refreshing blend of blood orange, prosecco, and a splash of soda.";
 
     refreshmentsItem1.append(refreshmentsItem1Img, refreshmentsItem1NamePrice, refreshmentsItem1Info);
@@ -464,28 +470,30 @@ export default function loadMenu() {
 
     //Refreshment 2
     const refreshmentsItem2 = document.createElement("div");
-    refreshmentsItem2.classList.add("refreshmentsItem2");
+    refreshmentsItem2.classList.add("drinkItems");
 
     const refreshmentsItem2Img = document.createElement("img");
-    refreshmentsItem2Img.classList.add("refreshmentsItem2Img");
+    refreshmentsItem2Img.classList.add("drinks");
+    refreshmentsItem2Img.src = drink2;
+
 
     const refreshmentsItem2NamePrice = document.createElement("div");
-    refreshmentsItem2NamePrice.classList.add("refreshmentsItem2NamePrice");
+    refreshmentsItem2NamePrice.classList.add("drinkNamePrice");
 
     const refreshmentsItem2Name = document.createElement("div");
-    refreshmentsItem2Name.classList.add("refreshmentsItem2Name");
+    refreshmentsItem2Name.classList.add("drinkName");
     refreshmentsItem2Name.textContent = "Garden Tonic";
 
 
     const refreshmentsItem2Price = document.createElement("div");
-    refreshmentsItem2Price.classList.add("refreshmentsItem2Price");
+    refreshmentsItem2Price.classList.add("itemPrice");
     refreshmentsItem2Price.textContent = "$9";
 
     refreshmentsItem2NamePrice.append(refreshmentsItem2Name, refreshmentsItem2Price);
 
 
     const refreshmentsItem2Info = document.createElement("div");
-    refreshmentsItem2Info.classList.add("refreshmentsItem2Info");
+    refreshmentsItem2Info.classList.add("drinkInfo");
     refreshmentsItem2Info.textContent = "Cucumber, fresh mint, lime, and house-made tonic water.";
 
     refreshmentsItem2.append(refreshmentsItem2Img, refreshmentsItem2NamePrice, refreshmentsItem2Info);
@@ -494,28 +502,30 @@ export default function loadMenu() {
 
     //Refreshment 3
     const refreshmentsItem3 = document.createElement("div");
-    refreshmentsItem3.classList.add("refreshmentsItem3");
+    refreshmentsItem3.classList.add("drinkItems");
 
     const refreshmentsItem3Img = document.createElement("img");
-    refreshmentsItem3Img.classList.add("refreshmentsItem3Img");
+    refreshmentsItem3Img.classList.add("drinks");
+    refreshmentsItem3Img.src = drink3;
+
 
     const refreshmentsItem3NamePrice = document.createElement("div");
-    refreshmentsItem3NamePrice.classList.add("refreshmentsItem3NamePrice");
+    refreshmentsItem3NamePrice.classList.add("drinkNamePrice");
 
     const refreshmentsItem3Name = document.createElement("div");
-    refreshmentsItem3Name.classList.add("refreshmentsItem3Name");
+    refreshmentsItem3Name.classList.add("drinkName");
     refreshmentsItem3Name.textContent = "Crimson Berry Iced Tea";
 
 
     const refreshmentsItem3Price = document.createElement("div");
-    refreshmentsItem3Price.classList.add("refreshmentsItem3Price");
+    refreshmentsItem3Price.classList.add("itemPrice");
     refreshmentsItem3Price.textContent = "$8";
 
     refreshmentsItem3NamePrice.append(refreshmentsItem3Name, refreshmentsItem3Price);
 
 
     const refreshmentsItem3Info = document.createElement("div");
-    refreshmentsItem3Info.classList.add("refreshmentsItem3Info");
+    refreshmentsItem3Info.classList.add("drinkInfo");
     refreshmentsItem3Info.textContent = "Cold-brewed black tea infused with raspberry and hibiscus.";
 
     refreshmentsItem3.append(refreshmentsItem3Img, refreshmentsItem3NamePrice, refreshmentsItem3Info);

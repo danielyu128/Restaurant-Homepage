@@ -394,7 +394,8 @@ body {
 }
 
 .smallPlatesTitle,
-.mainCoursesTitle {
+.mainCoursesTitle,
+.refreshmentsTitle {
     font-weight: bold;
     font-size: 40px;
 }
@@ -412,8 +413,21 @@ body {
     flex-direction: column;
     gap: 10px;
     border-bottom: 0.6px solid lightgray;
-    padding: 15px 0px;
+    padding: 15px 10px;
+    border-radius: 15px;
+    transition:
+        transform 0.4s ease,
+        background-color 0.4s ease;
+
 }
+
+.items:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.05);
+    /* subtle dark hue */
+
+}
+
 
 .namePrice {
     display: flex;
@@ -426,13 +440,15 @@ body {
 }
 
 .itemPrice {
-    color: red;
+    color: #d4111b;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .itemInfo {
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
+    color: #555555;
+    font-size: 15px;
 }
 
 
@@ -471,4 +487,60 @@ body {
 .dietary {
     display: flex;
     gap: 6px;
+}
+
+.refreshmentsList {
+    display: flex;
+    gap: 25px;
+
+}
+
+.drinks {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.drinkItems {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 0.6px solid lightgray;
+    transition:
+        transform 0.4s ease,
+        background-color 0.4s ease;
+    border-radius: 15px;
+    
+}
+
+.refreshments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.drinkInfo {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.drinkItems:hover {
+    transform: translateY(-10px);
+    background-color: rgba(0, 0, 0, 0.05);
+    /* subtle dark hue */
+
+}
+
+.drinkNamePrice{
+    display: flex;
+    gap: 30px;
+}
+
+.drinkName{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
 }
