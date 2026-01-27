@@ -1,6 +1,10 @@
 import location from "./assets/location.png";
 import phone from "./assets/phone.png";
 import email from "./assets/email.png";
+import mapPin from "./assets/mapPin.png";
+import map from "./assets/map.jpg";
+
+
 
 export default function loadContact() {
 
@@ -134,6 +138,7 @@ export default function loadContact() {
 
     const pinIcon = document.createElement("img");
     pinIcon.classList.add("pinIcon");
+    pinIcon.src = mapPin;
 
     const openInMapsText = document.createElement("div");
     openInMapsText.classList.add("openInMapsText");
