@@ -4,7 +4,7 @@ import email from "./assets/email.png";
 import mapPin from "./assets/mapPin.png";
 import clock from "./assets/clock.png";
 import infoImg from "./assets/info.png";
-
+import socials from "./assets/socials.png";
 
 
 export default function loadContact() {
@@ -261,9 +261,40 @@ export default function loadContact() {
     //Adding main content to contact page
     contactPage.append(contactContent);
 
+    const contactBottom = document.createElement("div");
+    contactBottom.classList.add("contactBottom");
 
-    
+    const contactBottomTitle = document.createElement("div");
+    contactBottomTitle.classList.add("contactBottomTitle");
+    contactBottomTitle.textContent = "The Crimson Fork";
 
+    const contactBottomCopyright = document.createElement("div");
+    contactBottomCopyright.classList.add("contactBottomCopyright");
+    contactBottomCopyright.textContent = "© 2026 The Crimson Fork. All rights reserved.";
+
+    const contactBottomImg = document.createElement("img");
+    contactBottomImg.classList.add("contactBottomImg");
+    contactBottomImg.src = socials;
+
+    contactBottom.append(contactBottomTitle, contactBottomCopyright, contactBottomImg);
+
+    //Adding the bottom contact info to the page
+    contactPage.append(contactBottom);
+
+    const innerContainer3 = document.createElement("div");
+    innerContainer3.classList.add("innerContainer3");
+
+    const footerName = document.createElement("div");
+    footerName.classList.add("footerName");
+    footerName.textContent = "The Crimson Fork";
+
+    const copyright = document.createElement("div");
+    copyright.classList.add("copyright");
+    copyright.textContent = "@ 2026 The Crimson Fork. All rights reserved.";
+
+    innerContainer3.append(footerName, copyright);
+
+    contactPage.append(innerContainer3);
 
 
 
