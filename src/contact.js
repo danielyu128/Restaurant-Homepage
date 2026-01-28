@@ -2,7 +2,8 @@ import location from "./assets/location.png";
 import phone from "./assets/phone.png";
 import email from "./assets/email.png";
 import mapPin from "./assets/mapPin.png";
-import map from "./assets/map.jpg";
+import clock from "./assets/clock.png";
+import infoImg from "./assets/info.png";
 
 
 
@@ -165,6 +166,7 @@ export default function loadContact() {
 
     const clockImg = document.createElement("img");
     clockImg.classList.add("clockImg");
+    clockImg.src = clock;
 
     const openingHours = document.createElement("div");
     openingHours.classList.add("openingHours");
@@ -181,6 +183,7 @@ export default function loadContact() {
     for (let i = 0; i < 7; i++) {
 
         const dayAndHours = document.createElement("div");
+        dayAndHours.classList.add("dayAndHours");
         const day = document.createElement("div");
         const hoursOfOperation = document.createElement("div");
 
@@ -241,6 +244,7 @@ export default function loadContact() {
 
     const contactContentRightSideBottomImg = document.createElement("img");
     contactContentRightSideBottomImg.classList.add("contactContentRightSideBottomImg");
+    contactContentRightSideBottomImg.src = infoImg;
 
     const contactContentRightSideBottomInfo = document.createElement("div");
     contactContentRightSideBottomInfo.classList.add("contactContentRightSideBottomInfo");
@@ -256,6 +260,11 @@ export default function loadContact() {
 
     //Adding main content to contact page
     contactPage.append(contactContent);
+
+
+    
+
+
 
 
     return { contactPage };
